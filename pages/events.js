@@ -55,7 +55,7 @@ const Events = () => {
         </div>
         <div className=" font-semibold tracking-widest text-gray-700">
           <span>
-            {'"' + artist.upcoming_event_count + '" '} upcoming events
+            {'"' + artist?.upcoming_event_count + '" '} upcoming events
           </span>
         </div>
         {loading ? (
