@@ -11,14 +11,11 @@ import FadeLoader from "react-spinners/FadeLoader";
 import { setArtist } from "../redux/features/artist/artistSlice";
 
 export default function Home() {
-  // const [search, setSearch] = useState("");
-  // const [artist, setArtist] = useState(null);
   const [click, setClick] = useState("");
   const [loading, setLoading] = useState(true);
 
   const search = useSelector((state) => state.search.value);
   const artist = useSelector((state) => state.artist.value);
-  // console.log(artist);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -44,7 +41,6 @@ export default function Home() {
           dispatch(setArtist(res.data ? res.data : null));
           setClick(search);
           setLoading(false);
-          console.log(res.data);
         })
         .catch((err) => console.log(err));
     else {

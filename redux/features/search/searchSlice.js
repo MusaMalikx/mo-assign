@@ -14,7 +14,6 @@ export const searchSlice = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
 export const { setSearch } = searchSlice.actions
 
 export default searchSlice.reducer

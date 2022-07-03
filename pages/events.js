@@ -14,18 +14,12 @@ const Events = () => {
   const artist = useSelector((state) => state.artist.value);
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
-  // console.log("Artist", artist);
-  // const router = useRouter();
-  // const artist = router.query;
-
-  // console.log(artist);
 
   useEffect(() => {
     const getEvents = async () => {
       await axios
         .get(`https://rest.bandsintown.com/artists/${search}/events?app_id=abc`)
         .then((res) => {
-          // console.log(res.data);
           setEvents(res.data);
           setLoading(false);
         })

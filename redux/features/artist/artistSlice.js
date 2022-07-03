@@ -14,7 +14,6 @@ export const artistSlice = createSlice({
   },
 })
 
-// Action creators are generated for each case reducer function
 export const { setArtist } = artistSlice.actions
 
 export default artistSlice.reducer

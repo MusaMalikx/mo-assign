@@ -1,6 +1,5 @@
 const Event = ({ upcomming }) => {
   const date = String(new Date(upcomming.datetime));
-  //   console.log(date);
 
   return (
     <div className="tracking-wider p-4 flex flex-col bg-white m-3 shadow-[0px_1px_5px_2px_rgba(0,0,0,0.2)] transition hover:scale-105">

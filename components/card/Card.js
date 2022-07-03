@@ -2,13 +2,11 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 const Card = ({ artist }) => {
-  // console.log(artist);
   const router = useRouter();
 
   const cardHandler = () => {
     router.push({
       pathname: "/events",
-      // query: artist,
     });
   };
 
